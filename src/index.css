@@ -1,0 +1,219 @@
+:root {
+	--header-height:40px;
+	--half-header-height:calc( var(--header-height) / 2 );
+	--two-fifth-header-height:calc( 2 * var(--header-height) / 5 );
+    --header-font-size:calc( 4 * var(--header-height) / 13 );
+    --menu-width: calc( var(--header-height) * 2 );
+	--ok-color: #4f4f4f;
+	--cancel-color: #bf2f2f;
+	--error-color: #b2f2f2;
+	--button-color:#ffffff;
+	--lightgray-color:#dfdfdf;
+	--gray-color:#7f7f7f;
+	--darkgray-color:#4f4f4f;
+	--dark-color:#2f2f2f;
+	--black-color:#000000;
+}
+
+* { box-sizing: border-box;	}
+div { margin:0; padding:0 }
+
+body { 
+    background-color:white; scroll-behavior:smooth;
+    font-family:arial; margin:0; padding:0;
+}
+
+div { box-sizing: border-box; margin:0px; padding:0px; }
+
+table { box-sizing: border-box; margin:0px; padding:0px; }
+
+td { padding:0px; }
+
+a { text-decoration:none; color:white; }
+
+.custom-cell-container { width:100%; }
+.custom-cell-container::after {
+    content: ""; clear: both; display: table;
+}
+.custom-cell-container div.custom-cell { 
+    margin:0px; padding:4px; float:left;
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; 
+}
+.custom-cell-container div.custom-cell-wide { width:75%; }
+.custom-cell-container div.custom-cell-narrow { width:25%; }
+
+@media only screen and (max-width: 799px) {
+    .custom-cell-container div.custom-cell-wide { width:100%; }
+    .custom-cell-container div.custom-cell-narrow { width:100%; }
+}
+
+.header {
+    height:var(--header-height); width:100%; margin:0; padding:0; display:block; 
+    border-bottom:0px solid var(--dark-color); 
+    background-image:linear-gradient(to right, rgb(120,120,120), rgb(20,20,20), rgb(120,120,120));
+}
+
+#projectDetails {
+    position:absolute; left: var(--menu-width);
+    height:var(--header-height); max-height:var(--header-height); overflow:hidden; 
+    margin:0px; display:block; float:left; 
+    text-align:left; color:#dfdfdf; 
+}
+#projectName {
+    width:100%; height:var(--half-header-height); margin:0px; padding-top:2px; display:block; 
+    white-space:nowrap; text-overflow:ellipsis; overflow:hidden;  
+    text-align:left; font-size:16px;
+}
+#projectTimeAndVersion {
+    width:100%; height:var(--half-header-height); display:block; 
+    white-space:nowrap; text-overflow:ellipsis; overflow:hidden;
+    font-family:courier; text-align:left; font-size:11px; margin:0; padding:2px;
+}
+
+.menu {
+    width:var(--menu-width); height:var(--header-height); margin:0px 0px 0px 0px; padding:0px; 
+    display:block; float:left; text-align:left; 
+}
+
+#user {
+    position:relative; display: inline-block; 
+}
+
+#userButton {
+    display:block; float:left; height:var(--header-height); max-height:var(--header-height); 
+    margin:0px; padding:0px 2px 0px 2px; border:none; cursor: pointer;  
+    background-color:rgba(0,0,0,0); color: #dfdfdf; font-size:var(--half-header-height);
+}
+
+#userContent {
+    z-index: 1000; display: none; position: absolute; top:var(--header-height); width:25vw;
+    margin:0; padding:8px; background-color: rgba(70, 70, 70, 0.8); 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); text-align:left;  
+}
+
+#userName { color: #dfdfdf; font-style:italic; }
+
+#userLogout { cursor: pointer; color: #dfdfdf; }
+#userLogout:hover { color: white; }
+
+#dropdown {
+    position:relative; display: inline-block; 
+}
+
+#dropdownButton {
+    display:block; float:left; height:var(--header-height); max-height:var(--header-height); 
+    margin:0px; padding:0px 2px 0px 2px; border:none; 
+    background-color:rgba(0,0,0,0); color: #dfdfdf; cursor: pointer; font-size:var(--half-header-height);
+}
+
+#dropdownContent {
+    z-index: 1000; display: none; position: absolute; top:var(--header-height); 
+    width:25vw; max-height:calc(90vh - 50px);
+    margin:0; padding:2px; background-color: rgba(70, 70, 70, 0.8); 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); text-align:left;
+}
+
+#dropdownContent div {
+    font-size:var(--two-fifth-header-height); cursor:pointer; height:40px; padding:4px; color:#dfdfdf;
+}
+
+#dropdownContent div:hover { background-color:#2f2f2f; color:#dfdfdf; }
+#dropdown:hover #dropdownButton { color: white; }
+/* #dropdown:hover #dropdownContent { display: block; } */
+/* #dropdownButton:hover #dropdownContent { display: block; } */
+
+#dropdownContent div img {
+    height:28px; padding:1px; border: 1px solid #7f7f7f; border-radius:5px; 
+}
+
+#menuUser {
+    border-bottom: 1px dotted gray; height: auto !important; padding: 8px 4px 8px 4px !important;
+}
+#menuUserName { color:#efefef; }
+
+
+#pageModel {
+    width:100%; top:var(--header-height);
+    display:block; border:0; margin:0; padding:0; background-color:white; text-align:center;
+}		
+
+#pageHelp { 
+    display:none; overflow:auto;
+} 
+
+#pageModel, #pageHelp {
+    width:100%; border:0; margin:0; padding:0; background-color:white; overflow:hidden;
+}
+
+    
+h1 { margin:2% 1% 1% 1%; font-size:140%; color:var(--dark-color); font-variant:small-caps; }
+
+dim { border-color:var(--lightgray-color); color:var(--lightgray-color); }
+
+.enabled { color: var(--darkgray-color); cursor:pointer; }
+.disabled { color: var(--lightgray-color); cursor:default; }
+
+.clearfix::after {
+    content: ""; clear: both; display: table;
+}
+
+button { margin:0px; border:1px dotted var(--darkgray-color); 
+    border-radius:4px; background-color:var(--lightgray-color); 
+    cursor: pointer; text-align:center; }
+
+button.ok { border-color:var(--ok-color); color:var(--ok-color); padding-top:12px; padding-bottom:12px; }
+button.ok:hover { background-color: var(--ok-color); color: white; }
+
+button.cancel { border-color: var(--cancel-color); color: var(--cancel-color); padding-top:12px; padding-bottom:12px; }
+button.cancel:hover { background: var(--cancel-color); color: white; }
+
+.ok-color { color: var(--ok-color); }
+.cancel-color { color: var(--cancel-color); }
+.error-color { color: var(--error-color); }	
+
+.keyword {
+    background-color: var(--lightgray-color); padding:0px 4px 0px 4px; border-radius:4px; font-style:normal;
+}
+
+.helpText {
+    padding:24px 20vw 0px 20vw; text-align:left; line-height:150%; font-size:14px;
+}
+
+.helpText div {
+    margin-bottom:24px;
+}
+
+.helpText div img {
+    display:inline-block; height:20px; position:relative; top:4px;
+}
+
+#confirmationBox { position:absolute; display:none; left:30%; top:30%; width:40%; height:40%; }
+#confirmationBoxContainer { 
+	position:relative; display:table-cell; min-width:100%; min-height:100%; 
+	background-color:#ffffff; text-align:center; vertical-align:middle; 
+}
+#confirmationBoxText { padding:4px 4px 24px 4px; }
+#confirmationBoxOk { width:50%; margin-bottom:12px; border-color:var(--ok-color); color:var(--ok-color); padding-top:12px; padding-bottom:12px; } 
+#confirmationBoxOk:hover { background-color: var(--ok-color); color: white; }
+#confirmationBoxCancel { width:50%; visibility:hidden; border-color: var(--cancel-color); color: var(--cancel-color); padding-top:12px; padding-bottom:12px; }
+#confirmationBoxCancel:hover { background: var(--cancel-color); color: white; }
+
+#blackOutBox { position:absolute; display:none; left:0; top:0; min-width:100%; min-height:100%; background-color:#4f4f4f; opacity:0.35; }
+#messageBox { position:absolute; display:none; left:30%; top:30%; width:40%; height:40%; }
+#messageBoxText { position:relative; display:table-cell; min-width:100%; min-height:100%; background-color:#ffffff; text-align:center; vertical-align:middle; }
+
+#bimDiv { margin:0; padding:0px; }
+#bimInfo { margin:0; padding:0px 8px 0px 4px; text-align:left; }
+#bimInfo > div { width:100%; margin:12px 0px 2px 0px; line-height:140%; padding:12px; 
+    border:1px solid lightgray; border-radius:8px; color:#4f4f4f; }
+#bimInfo span { font-size:90%; }
+#bimHideByPickReset { font-size:90%; font-weight: normal; text-align: right; text-decoration: underline; }
+#bimProduct { width:90%; margin:0px 0px 0px 5%; padding:0px 0px 22px 22px; font-size:90%; background-color:#f7f7f7; color:#4f4f4f; height:25vh; overflow:auto; }
+#bimProduct span { color:#7f7f7f; font-weight:normal; font-style:italic; }
+#bimTimeScaleToFinish { font-size:90%; font-weight: normal; text-align: right; text-decoration: underline; }
+#bimTimeScaleTooltip {
+    display:none; position:absolute; background-color:#ffffff; margin:0px; padding:0px; border:1px dotted gray; border-radius:4px;
+    font-size:80%; color:#2f2f2f; 
+}
+
+

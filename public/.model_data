@@ -1,0 +1,879 @@
+{
+  "parameters" : {
+    "language" : "ru",
+    "timeDelim" : ":",
+    "dateDelim" : ".",
+    "dateFormat" : "",
+    "uploadTime" : 1611958280 
+  },
+  "project" : {
+    "Code" : "km",
+    "Version" : 5,
+    "Name" : "1 км дороги",
+    "Notes" : "",
+    "CurTime" : 1523642400,
+    "WexbimPath" : "",
+    "secondsInPixel" : "9757",
+    "expandToLevelAtStart" : "3" 
+  },
+  "activities" : [
+    {
+      "Level" : "1",
+      "Code" : "01km",
+      "Name" : "1 км дороги",
+      "A" : "33554432",
+      "Start" : 1521187200,
+      "Fin" : 1525253287,
+      "FactStart" : 1521187200,
+      "DurPlanD" : 14.2244191919192,
+      "CostTotal" : 61810447.9928344,
+      "AsapStart" : 1523642400,
+      "AsapFin" : 1525253287,
+      "f_LastFin" : 1523642400,
+      "f_ColorCom" : "11534336",
+      "f_ColorBack" : "13233656" 
+    },
+    {
+      "Level" : "2",
+      "Code" : "8",
+      "Name" : "Управление",
+      "A" : "33554432",
+      "Start" : 1521187200,
+      "Fin" : 1525253287,
+      "FactStart" : 1521187200,
+      "DurPlanD" : 14.2244191919192,
+      "CostTotal" : 275009.330555556,
+      "AsapStart" : 1523642400,
+      "AsapFin" : 1525253287,
+      "f_LastFin" : 1523642400,
+      "f_ColorCom" : "53760",
+      "f_ColorBack" : "13434828" 
+    },
+    {
+      "Level" : "2",
+      "Code" : "в0ув",
+      "Name" : "Устройство водоотвода",
+      "A" : "33554432",
+      "Start" : 1521187200,
+      "Fin" : 1523642400,
+      "FactStart" : 1521187200,
+      "FactFin" : 1523642400,
+      "CostTotal" : 6714048.6,
+      "f_LastFin" : 1523642400,
+      "f_ColorCom" : "53760",
+      "f_ColorBack" : "13434828" 
+    },
+    {
+      "Code" : "в1",
+      "Name" : "Планировка участка",
+      "DPH" : "Производительность",
+      "Notes" : "Тест  \n2\nкомментария",
+      "A" : "33554432",
+      "Start" : 1521187200,
+      "Fin" : 1521727200,
+      "FactStart" : 1521187200,
+      "FactFin" : 1521727200,
+      "Unit" : "м2",
+      "CostTotal" : 895890,
+      "VolFact" : 5000,
+      "f_LastFin" : 1521727200,
+      "f_ColorCom" : "9240460",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Code" : "в3",
+      "Name" : "Устройство водосборника",
+      "DPH" : "Производительность",
+      "A" : "33554432",
+      "Start" : 1521457200,
+      "Fin" : 1522170000,
+      "FactStart" : 1521457200,
+      "FactFin" : 1522170000,
+      "Unit" : "м3",
+      "CostTotal" : 1599461.8,
+      "VolFact" : 2000,
+      "f_LastFin" : 1522170000,
+      "f_ColorCom" : "9240460",
+      "f_ColorBack" : "16777215",
+      "f_Model": "14138" 
+    },
+    {
+      "Code" : "в2",
+      "Name" : "Устройство Водоотводных канав",
+      "DPH" : "Производительность",
+      "A" : "33554432",
+      "Start" : 1522170000,
+      "Fin" : 1523642400,
+      "FactStart" : 1522170000,
+      "FactFin" : 1523642400,
+      "Unit" : "м",
+      "CostTotal" : 4218696.8,
+      "VolFact" : 4000,
+      "f_LastFin" : 1523642400,
+      "f_ColorCom" : "9240460",
+      "f_ColorBack" : "16777215",
+      "f_Model": "14172"
+    },
+    {
+      "Level" : "2",
+      "Code" : "3",
+      "Name" : "Устройство Основания",
+      "A" : "33554432",
+      "Start" : 1521727200,
+      "Fin" : 1524730000,
+      "FactStart" : 1521727200,
+      "DurPlanD" : 10.1010101010101,
+      "CostTotal" : 28490075.0520011,
+      "AsapStart" : 1523642400,
+      "AsapFin" : 1524730000,
+      "f_LastFin" : 1523642400,
+      "f_ColorCom" : "53760",
+      "f_ColorBack" : "13434828" 
+    },
+    {
+      "Code" : "10",
+      "Name" : "Планировка",
+      "DPH" : "Производительность",
+      "A" : "33554432",
+      "Start" : 1521727200,
+      "Fin" : 1523037600,
+      "FactStart" : 1521727200,
+      "FactFin" : 1523037600,
+      "Unit" : "м2",
+      "CostTotal" : 2276879.8,
+      "VolFact" : 12000,
+      "f_LastFin" : 1523037600,
+      "f_ColorCom" : "9240460",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Code" : "7",
+      "Name" : "Заготовка песка, щебня",
+      "DPH" : "Длительность",
+      "A" : "33554432",
+      "Start" : 1521727200,
+      "Fin" : 1522936800,
+      "FactStart" : 1521727200,
+      "FactFin" : 1522936800,
+      "Unit" : "м3",
+      "VolFact" : 20000,
+      "f_LastFin" : 1522936800,
+      "f_ColorCom" : "9240460",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Code" : "8",
+      "Name" : "Устройство песчаной постели",
+      "DPH" : "Производительность",
+      "A" : "33554432",
+      "Start" : 1523037600,
+      "Fin" : 1523731801,
+      "FactStart" : 1523037600,
+      "Unit" : "м3",
+      "VolPlan" : 1420.02859990467,
+      "DurPlanD" : 1.07578282828283,
+      "CostTotal" : 10236803.5853344,
+      "AsapStart" : 1523642400,
+      "AsapFin" : 1523731801,
+      "VolFact" : 8579.97140009533,
+      "f_LastFin" : 1523642400,
+      "f_ColorCom" : "255",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Code" : "9",
+      "Name" : "Устройство каменной постели",
+      "DPH" : "Производительность",
+      "A" : "33554432",
+      "Start" : 1523642400,
+      "Fin" : 1524313543,
+      "Unit" : "м3",
+      "VolPlan" : 10000,
+      "DurPlanD" : 6.4935101010101,
+      "CostTotal" : 12603156.6666667,
+      "AsapStart" : 1523642400,
+      "AsapFin" : 1524313543,
+      "f_ColorCom" : "255",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Code" : "18",
+      "Name" : "Нарезка кюветов",
+      "DPH" : "Производительность",
+      "Reserv" : 15.1797222222222,
+      "A" : "255",
+      "Start" : 1523642400,
+      "Fin" : 1524730000,
+      "Unit" : "м",
+      "VolPlan" : 2000,
+      "DurPlanD" : 10.1010101010101,
+      "CostTotal" : 3373235,
+      "AsapStart" : 1523642400,
+      "AsapFin" : 1524730000,
+      "f_ColorCom" : "9240460",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Level" : "2",
+      "Code" : "6",
+      "Name" : "Устройство Дорожной Одежды",
+      "A" : "33554432",
+      "Start" : 1524068415,
+      "Fin" : 1524735687,
+      "DurPlanD" : 6.39575757575758,
+      "CostTotal" : 13597578.6036111,
+      "AsapStart" : 1524068415,
+      "AsapFin" : 1524735687,
+      "f_ColorCom" : "53760",
+      "f_ColorBack" : "13434828" 
+    },
+    {
+      "Code" : "14",
+      "Name" : "Проливка битумом",
+      "DPH" : "Производительность",
+      "A" : "33554432",
+      "Start" : 1524068415,
+      "Fin" : 1524472925,
+      "Unit" : "м2",
+      "VolPlan" : 12000,
+      "DurPlanD" : 3.30580808080808,
+      "CostTotal" : 268329.487222222,
+      "AsapStart" : 1524068415,
+      "AsapFin" : 1524472925,
+      "f_ColorCom" : "255",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Code" : "11",
+      "Name" : "Нижний слой асфальтобетона",
+      "DPH" : "Производительность",
+      "A" : "33554432",
+      "Start" : 1524306171,
+      "Fin" : 1524481313,
+      "Unit" : "м2",
+      "VolPlan" : 12000,
+      "DurPlanD" : 1.05914141414141,
+      "CostTotal" : 6532496.04388889,
+      "AsapStart" : 1524306171,
+      "AsapFin" : 1524481313,
+      "f_ColorCom" : "255",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Code" : "13",
+      "Name" : "Проливка битумом",
+      "DPH" : "Производительность",
+      "A" : "33554432",
+      "Start" : 1524322948,
+      "Fin" : 1524680658,
+      "Unit" : "м2",
+      "VolPlan" : 12000,
+      "DurPlanD" : 3.30580808080808,
+      "CostTotal" : 268329.487222222,
+      "AsapStart" : 1524322948,
+      "AsapFin" : 1524680658,
+      "f_ColorCom" : "255",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Code" : "12",
+      "Name" : "Верхний слой АБ",
+      "DPH" : "Производительность",
+      "A" : "33554432",
+      "Start" : 1524647744,
+      "Fin" : 1524735687,
+      "Unit" : "м2",
+      "VolPlan" : 12000,
+      "DurPlanD" : 1.03896464646465,
+      "CostTotal" : 6528423.58527778,
+      "AsapStart" : 1524647744,
+      "AsapFin" : 1524735687,
+      "f_ColorCom" : "255",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Level" : "2",
+      "Code" : "7",
+      "Name" : "Благоустройство",
+      "A" : "33554432",
+      "Start" : 1524660087,
+      "Fin" : 1525253287,
+      "DurPlanD" : 4.70707070707071,
+      "CostTotal" : 12733736.4066667,
+      "AsapStart" : 1524660087,
+      "AsapFin" : 1525253287,
+      "f_ColorCom" : "53760",
+      "f_ColorBack" : "13434828" 
+    },
+    {
+      "Code" : "16",
+      "Name" : "Разметка",
+      "DPH" : "Производительность",
+      "Reserv" : 33.2513888888889,
+      "A" : "65280",
+      "Start" : 1524735687,
+      "Fin" : 1524820382,
+      "Unit" : "м",
+      "VolPlan" : 1000,
+      "DurPlanD" : 0.956944444444444,
+      "CostTotal" : 94840.1311111111,
+      "AsapStart" : 1524735687,
+      "AsapFin" : 1524820382,
+      "f_ColorCom" : "9240460",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Code" : "15",
+      "Name" : "Устройство обочин",
+      "DPH" : "Производительность",
+      "A" : "33554432",
+      "Start" : 1524660087,
+      "Fin" : 1524840087,
+      "Unit" : "м2",
+      "VolPlan" : 6000,
+      "DurPlanD" : 2.18181818181818,
+      "CostTotal" : 1583814.72,
+      "AsapStart" : 1524660087,
+      "AsapFin" : 1524840087,
+      "f_ColorCom" : "255",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Code" : "19",
+      "Name" : "Устройство ограждения",
+      "DPH" : "Производительность",
+      "A" : "33554432",
+      "Start" : 1524840087,
+      "Fin" : 1525253287,
+      "Unit" : "м",
+      "VolPlan" : 2000,
+      "DurPlanD" : 2.52525252525253,
+      "CostTotal" : 11025488.8888889,
+      "AsapStart" : 1524840087,
+      "AsapFin" : 1525253287,
+      "f_ColorCom" : "255",
+      "f_ColorBack" : "16777215" 
+    },
+    {
+      "Code" : "17",
+      "Name" : "Установка дорожных знаков",
+      "DPH" : "Производительность",
+      "Reserv" : 24.4444444444444,
+      "A" : "65535",
+      "Start" : 1524840087,
+      "Fin" : 1524852087,
+      "Unit" : "шт",
+      "VolPlan" : 3,
+      "DurPlanD" : 0.303030303030303,
+      "CostTotal" : 29592.6666666667,
+      "AsapStart" : 1524840087,
+      "AsapFin" : 1524852087,
+      "f_ColorCom" : "9240460",
+      "f_ColorBack" : "16777215" 
+    } 
+  ],
+  "fields" : [
+    {
+      "Code" : "Level",
+      "Name" : "Уровень",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 2 
+    },
+    {
+      "Code" : "Code",
+      "Name" : "Код",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Name",
+      "Name" : "Название",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 40 
+    },
+    {
+      "Code" : "DPH",
+      "Name" : "Тип ДПГ",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Notes",
+      "Name" : "Комментарии",
+      "Type" : "text",
+      "editable" : 1,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Reserv",
+      "Name" : "Резерв полный, Часы",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "A",
+      "Name" : "Пользовательское поле A",
+      "Type" : "signal",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Start",
+      "Name" : "Начало",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Fin",
+      "Name" : "Окончание",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "FactStart",
+      "Name" : "Начало [Факт]",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 1,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "FactFin",
+      "Name" : "Окончание [Факт]",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Unit",
+      "Name" : "Единица объёма",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "VolPlan",
+      "Name" : "Объём [План]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "DurPlanD",
+      "Name" : "Длительность, Дни [План]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "CostTotal",
+      "Name" : "Общая стоимость [Итог]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "AsapStart",
+      "Name" : "Начало [КМР]",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "AsapFin",
+      "Name" : "Окончание [КМР]",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "VolFact",
+      "Name" : "Объём [Факт]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "f_FontColor",
+      "Name" : "Цвет текста",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "f_LastFin",
+      "Name" : "LastFin",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "f_ColorCom",
+      "Name" : "ColorGraph",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "f_ColorBack",
+      "Name" : "ColorBack",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Start_COMP",
+      "Name" : "Start_COMP",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Fin_COMP",
+      "Name" : "Fin_COMP",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    } 
+  ],
+  "links" : [
+    {
+      "PredCode" : "в1",
+      "SuccCode" : "в2",
+      "sfType" : "FS",
+      "f_TypeSF2" : "0" 
+    },
+    {
+      "PredCode" : "в1",
+      "SuccCode" : "в3",
+      "sfType" : "SS",
+      "f_TypeSF2" : "10" 
+    },
+    {
+      "PredCode" : "в1",
+      "SuccCode" : "7",
+      "sfType" : "FS",
+      "f_TypeSF2" : "0" 
+    },
+    {
+      "PredCode" : "в1",
+      "SuccCode" : "10",
+      "sfType" : "FS",
+      "f_TypeSF2" : "0" 
+    },
+    {
+      "PredCode" : "в2",
+      "SuccCode" : "18",
+      "sfType" : "SS",
+      "f_TypeSF2" : "10" 
+    },
+    {
+      "PredCode" : "10",
+      "SuccCode" : "18",
+      "sfType" : "FS",
+      "f_TypeSF2" : "0" 
+    },
+    {
+      "PredCode" : "10",
+      "SuccCode" : "8",
+      "sfType" : "SS",
+      "f_TypeSF2" : "10" 
+    },
+    {
+      "PredCode" : "8",
+      "SuccCode" : "9",
+      "sfType" : "SS",
+      "f_TypeSF2" : "10" 
+    },
+    {
+      "PredCode" : "10",
+      "SuccCode" : "8",
+      "sfType" : "FF",
+      "f_TypeSF2" : "20" 
+    },
+    {
+      "PredCode" : "8",
+      "SuccCode" : "9",
+      "sfType" : "FF",
+      "f_TypeSF2" : "20" 
+    },
+    {
+      "PredCode" : "9",
+      "SuccCode" : "14",
+      "sfType" : "SS",
+      "f_TypeSF2" : "10" 
+    },
+    {
+      "PredCode" : "9",
+      "SuccCode" : "14",
+      "sfType" : "FF",
+      "f_TypeSF2" : "20" 
+    },
+    {
+      "PredCode" : "14",
+      "SuccCode" : "11",
+      "sfType" : "SS",
+      "f_TypeSF2" : "10" 
+    },
+    {
+      "PredCode" : "14",
+      "SuccCode" : "11",
+      "sfType" : "FF",
+      "f_TypeSF2" : "20" 
+    },
+    {
+      "PredCode" : "11",
+      "SuccCode" : "13",
+      "sfType" : "SS",
+      "f_TypeSF2" : "10" 
+    },
+    {
+      "PredCode" : "11",
+      "SuccCode" : "13",
+      "sfType" : "FF",
+      "f_TypeSF2" : "20" 
+    },
+    {
+      "PredCode" : "13",
+      "SuccCode" : "12",
+      "sfType" : "SS",
+      "f_TypeSF2" : "10" 
+    },
+    {
+      "PredCode" : "13",
+      "SuccCode" : "12",
+      "sfType" : "FF",
+      "f_TypeSF2" : "20" 
+    },
+    {
+      "PredCode" : "18",
+      "SuccCode" : "15",
+      "sfType" : "SS",
+      "f_TypeSF2" : "10" 
+    },
+    {
+      "PredCode" : "18",
+      "SuccCode" : "15",
+      "sfType" : "FF",
+      "f_TypeSF2" : "20" 
+    },
+    {
+      "PredCode" : "12",
+      "SuccCode" : "16",
+      "sfType" : "FS",
+      "f_TypeSF2" : "0" 
+    },
+    {
+      "PredCode" : "15",
+      "SuccCode" : "17",
+      "sfType" : "FS",
+      "f_TypeSF2" : "0" 
+    },
+    {
+      "PredCode" : "12",
+      "SuccCode" : "17",
+      "sfType" : "FS",
+      "f_TypeSF2" : "0" 
+    },
+    {
+      "PredCode" : "15",
+      "SuccCode" : "19",
+      "sfType" : "FS",
+      "f_TypeSF2" : "0" 
+    },
+    {
+      "PredCode" : "в2",
+      "SuccCode" : "18",
+      "sfType" : "FF",
+      "f_TypeSF2" : "20" 
+    },
+    {
+      "PredCode" : "12",
+      "SuccCode" : "15",
+      "sfType" : "SS",
+      "f_TypeSF2" : "10" 
+    },
+    {
+      "PredCode" : "12",
+      "SuccCode" : "15",
+      "sfType" : "FF",
+      "f_TypeSF2" : "20" 
+    },
+    {
+      "PredCode" : "7",
+      "SuccCode" : "8",
+      "sfType" : "FF",
+      "f_TypeSF2" : "20" 
+    },
+    {
+      "PredCode" : "в2",
+      "SuccCode" : "16",
+      "sfType" : "FS",
+      "f_TypeSF2" : "0" 
+    } 
+  ],
+  "performance" : [
+    {
+      "OperCode" : "1",
+      "Start" : 1521187200,
+      "Fin" : 1521828000,
+      "Vol" : 18.1309964493465 
+    },
+    {
+      "OperCode" : "в1",
+      "Start" : 1521187200,
+      "Fin" : 1521727200,
+      "Vol" : 5000 
+    },
+    {
+      "OperCode" : "в3",
+      "Start" : 1521457200,
+      "Fin" : 1521828000,
+      "Vol" : 1200 
+    },
+    {
+      "OperCode" : "7",
+      "Start" : 1521727200,
+      "Fin" : 1521828000,
+      "Vol" : 2200 
+    },
+    {
+      "OperCode" : "10",
+      "Start" : 1521727200,
+      "Fin" : 1521828000,
+      "Vol" : 1500 
+    },
+    {
+      "OperCode" : "21",
+      "Start" : 1521187200,
+      "Fin" : 1521187200,
+      "Vol" : 100 
+    },
+    {
+      "OperCode" : "1",
+      "Start" : 1521828000,
+      "Fin" : 1522432800,
+      "Vol" : 15.2563142195916 
+    },
+    {
+      "OperCode" : "в2",
+      "Start" : 1522170000,
+      "Fin" : 1522432800,
+      "Vol" : 800 
+    },
+    {
+      "OperCode" : "в3",
+      "Start" : 1521828000,
+      "Fin" : 1522170000,
+      "Vol" : 800 
+    },
+    {
+      "OperCode" : "7",
+      "Start" : 1521828000,
+      "Fin" : 1522432800,
+      "Vol" : 10000 
+    },
+    {
+      "OperCode" : "10",
+      "Start" : 1521828000,
+      "Fin" : 1522432800,
+      "Vol" : 6500 
+    },
+    {
+      "OperCode" : "1",
+      "Start" : 1522432800,
+      "Fin" : 1523037600,
+      "Vol" : 15.2035555437661 
+    },
+    {
+      "OperCode" : "в2",
+      "Start" : 1522432800,
+      "Fin" : 1523037600,
+      "Vol" : 1650 
+    },
+    {
+      "OperCode" : "7",
+      "Start" : 1522432800,
+      "Fin" : 1522936800,
+      "Vol" : 7800 
+    },
+    {
+      "OperCode" : "10",
+      "Start" : 1522432800,
+      "Fin" : 1523037600,
+      "Vol" : 4000 
+    },
+    {
+      "OperCode" : "1",
+      "Start" : 1523037600,
+      "Fin" : 1523642400,
+      "Vol" : 13.61712940862 
+    },
+    {
+      "OperCode" : "в2",
+      "Start" : 1523037600,
+      "Fin" : 1523642400,
+      "Vol" : 1550 
+    },
+    {
+      "OperCode" : "8",
+      "Start" : 1523037600,
+      "Fin" : 1523642400,
+      "Vol" : 8579.97140009533 
+    } 
+  ] 
+}
