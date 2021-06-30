@@ -1,5 +1,6 @@
 ﻿import { _settings } from './settings.js';
 import { _globals, _data } from './globals.js';
+import { displayMessageBox } from './boxes.js';
 import { dateIntoSpiderDateString, decColorToString, digitsOnly } from './utils.js';
 
 export function initData() {
@@ -18,7 +19,7 @@ export function initData() {
 		} else {
 			d.StartInSeconds = -1;
 		}
-		if( typeof(w.Fin) !== 'undefined' && w.Find !== null ) {
+		if( typeof(w.Fin) !== 'undefined' && w.Fin !== null ) {
 			w.FinInSeconds = w.Fin;
 			w.Fin = dateIntoSpiderDateString( w.FinInSeconds );
 		} else {

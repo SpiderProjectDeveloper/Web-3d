@@ -61,20 +61,20 @@ function loadData() {
                     hideMessageBox();                    
 
 			    	if( !('activities' in _data) || _data.activities.length == 0 ) {
-						displayMessageBox( _texts[_globals.lang].errorParsingData ); 
-						return;
-                    }
-                    if( initData() == 0 ) {
-						displayHeaderAndFooterInfo();						
-						displayBimFile();
-                    } else {
-                        displayMessageBox( _texts[_globals.lang].errorLoadingData ); 
-                    }                        
+							displayMessageBox( _texts[_globals.lang].errorParsingData ); 
+							return;
+            }
+            if( initData() == 0 ) {
+							displayHeaderAndFooterInfo();						
+							displayBimFile();
+            } else {
+              displayMessageBox( _texts[_globals.lang].errorLoadingData ); 
+            }                        
 				} else {
 					displayMessageBox( _texts[_globals.lang].errorLoadingData ); 
 				}
-		    }
-        };
+		  }
+    };
 		let requestUrl = _settings.urlData + decodeURIComponent(window.location.search);         
 		xmlhttp.open("GET", requestUrl, true); 		//xmlhttp.open("GET", 'test.json', true);
 		xmlhttp.setRequestHeader("Cache-Control", "no-cache");

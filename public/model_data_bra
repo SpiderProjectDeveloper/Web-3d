@@ -1,0 +1,603 @@
+﻿{
+  "parameters" : {
+    "language" : "en",
+    "timeDelim" : ":",
+    "dateDelim" : "/",
+    "dateFormat" : "",
+    "uploadTime" : 1618157347 
+  },
+  "project" : {
+    "Code" : "sava2021-08-04-2021",
+    "Version" : 1000,
+    "Name" : "Project 16",
+    "Notes" : "",
+    "CurTime" : 1617955200,
+    "WexbimPath" : "C:\\Users\\marcu\\Documents\\Spider Project\\BIM\\20201208FM_ARC_DigitalHub.wexbim",
+    "secondsInPixel" : "1269329",
+    "expandToLevelAtStart" : "3" 
+  },
+  "activities" : [
+    {
+      "Notes" : "test",
+      "Name" : "2018_01",
+      "Calen" : "A",
+      "BSC" : "0",
+      "Start" : 1617955200,
+      "Fin" : 2416320000,
+      "DurPlan" : 52400,
+      "Unit" : "",
+      "NumDaysSum" : 6550,
+      "DurSum" : 52400,
+      "DurSumD" : 6550,
+      "NumDays" : 6550,
+      "AsapStart" : 1617955200,
+      "AsapFin" : 2416320000,
+      "AlapStart" : 1617955200,
+      "AlapFin" : 2416320000,
+      "Level" : "1",
+      "Code" : "1OVsTAdVr0zxMeLRosmk1W",
+      "f_ColorCom" : "0",
+      "f_ColorBack" : "13233656" 
+    },
+    {
+      "Notes" : "another test",
+      "Name" : "Default",
+      "BSC" : "1",
+      "Start" : 1617955200,
+      "Fin" : 2416320000,
+      "DurPlan" : 52400,
+      "Unit" : "",
+      "NumDaysSum" : 6550,
+      "DurSum" : 52400,
+      "DurSumD" : 6550,
+      "NumDays" : 6550,
+      "AsapStart" : 1617955200,
+      "AsapFin" : 2416320000,
+      "AlapStart" : 1617955200,
+      "AlapFin" : 2416320000,
+      "Level" : "2",
+      "Code" : "1OVsTAdVr0zxMeLRosmk1Y",
+      "f_ColorCom" : "0",
+      "f_ColorBack" : "13434828" 
+    },
+    {
+      "Notes" : "test 003 - modified",
+      "BSC" : "1.1",
+      "Start" : 1617955200,
+      "Fin" : 2416320000,
+      "DurPlan" : 52400,
+      "Unit" : "",
+      "NumDaysSum" : 6550,
+      "DurSum" : 52400,
+      "DurSumD" : 6550,
+      "NumDays" : 6550,
+      "AsapStart" : 1617955200,
+      "AsapFin" : 2416320000,
+      "AlapStart" : 1617955200,
+      "AlapFin" : 2416320000,
+      "Level" : "3",
+      "Code" : "1OVsTAdVr0zxMeLRosmk1X",
+      "f_ColorCom" : "0",
+      "f_ColorBack" : "16769505" 
+    },
+    {
+      "Notes" : "5676",
+      "Name" : "B01_OKRD",
+      "BSC" : "1.1.1",
+      "Start" : 1617955200,
+      "Fin" : 1711468800,
+      "DurPlan" : 6160,
+      "Unit" : "",
+      "NumDaysSum" : 770,
+      "DurSum" : 6160,
+      "DurSumD" : 770,
+      "NumDays" : 770,
+      "AsapStart" : 1617955200,
+      "AsapFin" : 1711468800,
+      "AlapStart" : 1617955200,
+      "AlapFin" : 1711468800,
+      "Level" : "4",
+      "Code" : "1OVsTAdVr0zxMeLRn9FNo$",
+      "f_ColorCom" : "0",
+      "f_ColorBack" : "16777183" 
+    },
+    {
+      "Notes" : "sava test",
+      "Name" : "E00_OKRD",
+      "BSC" : "1.1.2",
+      "Start" : 1711526400,
+      "Fin" : 2128780800,
+      "DurPlan" : 27360,
+      "Unit" : "",
+      "NumDaysSum" : 3420,
+      "DurSum" : 27360,
+      "DurSumD" : 3420,
+      "NumDays" : 3420,
+      "AsapStart" : 1711526400,
+      "AsapFin" : 2128780800,
+      "AlapStart" : 1711526400,
+      "AlapFin" : 2128780800,
+      "Level" : "4",
+      "Code" : "1OVsTAdVr0zxMeLRn9FNzI",
+      "f_ColorCom" : "0",
+      "f_ColorBack" : "16777183" 
+    },
+    {
+      "Notes" : "phase test 004",
+      "Name" : "E01_OKRD",
+      "BSC" : "1.1.3",
+      "Start" : 2128838400,
+      "Fin" : 2416320000,
+      "DurPlan" : 18880,
+      "Unit" : "",
+      "NumDaysSum" : 2360,
+      "DurSum" : 18880,
+      "DurSumD" : 2360,
+      "NumDays" : 2360,
+      "AsapStart" : 2128838400,
+      "AsapFin" : 2416320000,
+      "AlapStart" : 2128838400,
+      "AlapFin" : 2416320000,
+      "Level" : "4",
+      "Code" : "1OVsTAdVr0zxMeLRn9FNmI",
+      "f_ColorCom" : "0",
+      "f_ColorBack" : "16777183" 
+    } 
+  ],
+  "fields" : [
+    {
+      "Code" : "Notes",
+      "Name" : "Notes",
+      "Type" : "text",
+      "editable" : 1,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Name",
+      "Name" : "Name",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 40 
+    },
+    {
+      "Code" : "Calen",
+      "Name" : "Calendar",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Type",
+      "Name" : "Type",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "DPH",
+      "Name" : "DPH type",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Prior",
+      "Name" : "Priority",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Alap",
+      "Name" : "ASAP / ALAP",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Split",
+      "Name" : "Interruptable",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Number",
+      "Name" : "Quantity",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "NumPlan",
+      "Name" : "Quantity [Scheduled]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Prod",
+      "Name" : "Productivity",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "BSC",
+      "Name" : "Code WBS",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Folder",
+      "Name" : "References to documents, sites, folders (URL)",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Start",
+      "Name" : "Start",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Fin",
+      "Name" : "Finish",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "DurPlan",
+      "Name" : "Duration, Hours [Remaining]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "VolPlan",
+      "Name" : "Volume [Remaining]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Unit",
+      "Name" : "Unit of volume",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "CostTotal",
+      "Name" : "Total cost [Cumulative]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "ReservD",
+      "Name" : "Float total, Days",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Reserv",
+      "Name" : "Float total, Hours",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "NumDaysSum",
+      "Name" : "Number of working days [Cumulative]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "WorkLoadSum",
+      "Name" : "Resource-hours [Cumulative]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "DurFact",
+      "Name" : "Duration, Hours [Actual]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "DurFactD",
+      "Name" : "Duration, Days [Actual]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "DurSum",
+      "Name" : "Duration, Hours [Cumulative]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "DurSumD",
+      "Name" : "Duration, Days [Cumulative]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "VolFact",
+      "Name" : "Volume [Actual]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "VolSum",
+      "Name" : "Volume [Cumulative]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "CostPlan",
+      "Name" : "Total cost [Remaining]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "CostFact",
+      "Name" : "Total cost [Actual]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "NumDays",
+      "Name" : "Number of working days [Remaining]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "NumDaysFact",
+      "Name" : "Number of working days [Actual]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "WorkLoadPlan",
+      "Name" : "Resource-hours [Remaining]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "WorkLoadFact",
+      "Name" : "Resource-hours [Actual]",
+      "Type" : "number",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 2,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "AsapStart",
+      "Name" : "Start [ASAP]",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 1,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "AsapFin",
+      "Name" : "Finish [ASAP]",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 1,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "AlapStart",
+      "Name" : "Start [ALAP]",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 1,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "AlapFin",
+      "Name" : "Finish [ALAP]",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 1,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "FactStart",
+      "Name" : "Start [Actual]",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 0,
+      "format" : 1,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Level",
+      "Name" : "Level",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 2 
+    },
+    {
+      "Code" : "Code",
+      "Name" : "Code",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "FactFin",
+      "Name" : "Finish [Actual]",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 1,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "f_FontColor",
+      "Name" : "Text color",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "f_LastFin",
+      "Name" : "LastFin",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 1,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "f_ColorCom",
+      "Name" : "Graph color",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "f_ColorBack",
+      "Name" : "Background color",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Start_COMP",
+      "Name" : "BASELINE - Start",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 1,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "Fin_COMP",
+      "Name" : "BASELINE - Finish",
+      "Type" : "datetime",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 1,
+      "widthsym" : 17 
+    },
+    {
+      "Code" : "f_Model",
+      "Name" : "Element of the model",
+      "Type" : "text",
+      "editable" : 0,
+      "hidden" : 1,
+      "format" : 0,
+      "widthsym" : 17 
+    } 
+  ],
+  "links" : [
+  ],
+  "performance" : [
+  ] 
+}

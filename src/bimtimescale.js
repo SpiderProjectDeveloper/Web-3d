@@ -87,11 +87,13 @@ function onTimeScaleMouseOut(e,id) {
 }	
 
 function timeScaleValueIntoSeconds(timeScaleValue) {
+	console.log('startMinInSeconds=',_data.startMinInSeconds,', finMaxInSeconds=', _data.finMaxInSeconds);
 	return _data.startMinInSeconds + timeScaleValue * (_data.finMaxInSeconds - _data.startMinInSeconds) / 100.0;
 }
 
 
 function timeScaleProgress( timeInSeconds ) {
+	console.log(_data);
 	for( let i = 0 ; i < _data.activities.length ; i++ ) {
 		let o = _data.activities[i];
 
@@ -131,9 +133,12 @@ function timeScaleProgress( timeInSeconds ) {
 					if( timeInSeconds >= o.AsapFinInSeconds ) {
 						o.__progressPct = 100;
 					} else {
-						let volPart = (timeInSeconds - o.AsapStartInSeconds) * o.VolPlan / (o.AsapFinInSeconds - o.AsapStartInSeconds + 1);
-						if( volTotal > 0 ) { 
+						if( volTotal > 0 && 'VolPlan' in o && typeof(o.VolPlan) === 'number' ) {
+							let volPart = (timeInSeconds - o.AsapStartInSeconds + 1) * o.VolPlan / (o.AsapFinInSeconds - o.AsapStartInSeconds + 1);
 							o.__progressPct += parseInt( volPart * 100 / volTotal );
+						} else {
+							let volPart = (timeInSeconds - o.AsapStartInSeconds + 1) / (o.AsapFinInSeconds - o.AsapStartInSeconds + 1);
+							o.__progressPct = parseInt(volPart*100);
 						}
 					}
 				} 

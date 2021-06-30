@@ -3,6 +3,22 @@
 const path = require('path');
 
 module.exports = {
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    compress: true,
+    port: 9000,
+		setup(app) {
+			//app.get('/bundle.js', (req, res) => {
+			//	  res.sendFile(path.resolve(__dirname, 'dist/bundle.js'));
+			//});
+			app.get('/.model_data', (req, res) => {
+			  res.sendFile(path.resolve(__dirname, 'public/model_data_bra'));
+			});
+			app.get('/.get_wexbim', (req, res) => {
+  				res.sendFile(path.resolve(__dirname, 'public/get_wexbim_bra'));
+			});
+		}
+  },
   entry: [
     './src/index.js',
   ],
