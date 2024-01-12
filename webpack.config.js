@@ -12,10 +12,10 @@ module.exports = {
 			//	  res.sendFile(path.resolve(__dirname, 'dist/bundle.js'));
 			//});
 			app.get('/.model_data', (req, res) => {
-			  res.sendFile(path.resolve(__dirname, 'public/model_data_bra'));
+			  res.sendFile(path.resolve(__dirname, 'public/data.json'));
 			});
 			app.get('/.get_wexbim', (req, res) => {
-  				res.sendFile(path.resolve(__dirname, 'public/get_wexbim_bra'));
+  				res.sendFile(path.resolve(__dirname, 'public/data.wexbim'));
 			});
 		}
   },

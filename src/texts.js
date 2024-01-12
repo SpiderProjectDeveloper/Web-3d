@@ -34,7 +34,8 @@ export var _texts = {
 		darkBackground: 'Dark Background', 
 		hideByPick: 'Hide by Pick', 
 		multipleChoice: 'Multiple Choice', 
-		reset:'Reset' },
+		reset:'Reset',
+		playHours: 'Hrs /', playSeconds: 'Sec.' },
 	'ru': { operation:'Операция', phase:'Фаза', status:'Состояние', resourse:'Ресурс(ы)', version: 'Версия', uploadTime: 'Загружено',
 		Level:'Уровень', Name:'Название', Code:'Код', Start:'Старт', Fin:'Финиш', 
 		Notes:'Комментарий', status0:'Не начато', status100:'Завершено', statusNotFinished:'Не завершено',
@@ -53,5 +54,6 @@ export var _texts = {
 		darkBackground: 'Темный фон', 
 		hideByPick: 'Прятать по клику', 
 		multipleChoice: 'Выбор неск. элементов', 
-		reset: 'Сброс' }
+		reset: 'Сброс',
+		playHours: 'Часов /', playSeconds: 'с' }
 };

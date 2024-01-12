@@ -4,7 +4,13 @@ import { _settings } from './settings.js'
 import { State } from '@xbim/viewer';
 
 var _timeScaleRange = null;
+var _timeScaleRangeMax = 100000.0;
 var _bim = null;
+var _timeScalePlay = null;
+var _timeScalePause = null;
+var _timeScalePlayHours = null;
+var _timeScalePlaySeconds = null;
+var _timeScalePlayOn = false;
 
 export function initTimeScale( bim ) {
 	_timeScaleRange = document.getElementById('bimTimeScaleRange');
@@ -13,9 +19,9 @@ export function initTimeScale( bim ) {
 	}
 	_bim = bim;
 
-	let positionAtScale = parseInt( 100.0 * (_data.project.curTimeInSeconds - _data.startMinInSeconds) / _data.startFinSeconds );
-	if( positionAtScale > 100 ) { 
-		positionAtScale = 100; 
+	let positionAtScale = parseInt( _timeScaleRangeMax * (_data.project.curTimeInSeconds - _data.startMinInSeconds) / _data.startFinSeconds );
+	if( positionAtScale > _timeScaleRangeMax ) { 
+		positionAtScale = _timeScaleRangeMax; 
 	} else if( positionAtScale < 0 ) {
 		positionAtScale = 0;
 	}
@@ -35,19 +41,32 @@ export function initTimeScale( bim ) {
 	_timeScaleRange.onmouseover = function(e) { onTimeScaleMouseOver(e, this); };
 	_timeScaleRange.onmousemove = function(e) { onTimeScaleMouseMove(e, this); };
 	_timeScaleRange.onmouseout = function(e) { onTimeScaleMouseOut(e, this); };
+
+	_timeScalePlayHours = document.getElementById('bimTimeScalePlayHours');
+	_timeScalePlaySeconds = document.getElementById('bimTimeScalePlaySeconds');
+
+	_timeScalePlay = document.getElementById('bimTimeScalePlay');
+	_timeScalePlay.onclick = function(e) {
+		playTimeScale();
+	}
+
+	_timeScalePause = document.getElementById('bimTimeScalePause');
+	_timeScalePause.onclick = function(e) {
+		stopTimeScale();
+	}
 }
 
 
 function timeScaleToFinish() {
-	_timeScaleRange.value = 100;
+	_timeScaleRange.value = _timeScaleRangeMax;
 	onTimeScaleChange(null);
 }
 
-function onTimeScaleChange(e) {
-	let timeInSeconds = timeScaleValueIntoSeconds( _timeScaleRange.value );
+function onTimeScaleChange(e, tms=null) {
+	let timeInSeconds = (tms) ? tms : timeScaleValueIntoSeconds( parseInt(_timeScaleRange.value) );
 	let timeScaleToFinishId = document.getElementById('bimTimeScaleToFinish');
-	timeScaleToFinishId.disabled = (_timeScaleRange.value == 100) ? true : false;
-	timeScaleToFinishId.style.cursor = (_timeScaleRange.value == 100) ? 'default': 'pointer';
+	timeScaleToFinishId.disabled = (_timeScaleRange.value < _timeScaleRangeMax) ? false : true;
+	timeScaleToFinishId.style.cursor = (_timeScaleRange.value < _timeScaleRangeMax) ? 'pointer' : 'default';
 	timeScaleProgress( timeInSeconds );	
 	displayProgress(true);
 	let d = new Date(timeInSeconds*1000);
@@ -55,16 +74,16 @@ function onTimeScaleChange(e) {
 }
 
 
-function onTimeScaleMouseOver(e,id) {
+function onTimeScaleMouseOver(e, id) {
 	let tooltipId = document.getElementById('bimTimeScaleTooltip');
 	tooltipId.style.display = 'block';
 }	
 
 
-function onTimeScaleMouseMove(e,id) {
+function onTimeScaleMouseMove(e, id) {
 	let rect = id.getBoundingClientRect();
 
-	let timeScaleValue = (e.x - rect.left) * 100.0 / rect.width;
+	let timeScaleValue = (e.x - rect.left) * _timeScaleRangeMax / rect.width;
 	let timeInSeconds = timeScaleValueIntoSeconds( timeScaleValue );
 	let d = new Date(timeInSeconds * 1000);
 	let tooltipId = document.getElementById('bimTimeScaleTooltip');
@@ -81,19 +100,65 @@ function onTimeScaleMouseMove(e,id) {
 }
 
 
-function onTimeScaleMouseOut(e,id) {
+function onTimeScaleMouseOut(e, id) {
 	let tooltipId = document.getElementById('bimTimeScaleTooltip');
 	tooltipId.style.display = 'none';
 }	
 
 function timeScaleValueIntoSeconds(timeScaleValue) {
-	console.log('startMinInSeconds=',_data.startMinInSeconds,', finMaxInSeconds=', _data.finMaxInSeconds);
-	return _data.startMinInSeconds + timeScaleValue * (_data.finMaxInSeconds - _data.startMinInSeconds) / 100.0;
+	//console.log('startMinInSeconds=',_data.startMinInSeconds,', finMaxInSeconds=', _data.finMaxInSeconds);
+	return _data.startMinInSeconds + timeScaleValue * (_data.finMaxInSeconds - _data.startMinInSeconds) / _timeScaleRangeMax;
+}
+
+function secondsIntoTimeScaleValue(seconds) {
+	let timeScaleValue = _timeScaleRangeMax * (seconds - _data.startMinInSeconds) / (_data.finMaxInSeconds - _data.startMinInSeconds);
+	if( timeScaleValue > _timeScaleRangeMax ) {
+		timeScaleValue = _timeScaleRangeMax;
+	}
+	return timeScaleValue;
+}
+
+function playTimeScale() {
+	_timeScalePlayOn = true;
+	_timeScalePlay.style.display = 'none';
+	_timeScalePause.style.display = 'inline-block';
+	playTimeScaleStep( timeScaleValueIntoSeconds( parseInt(_timeScaleRange.value) ) );
 }
 
 
+function stopTimeScale() {
+	_timeScalePlayOn = false;
+	_timeScalePlay.style.display = 'inline-block';
+	_timeScalePause.style.display = 'none';
+}
+
+function playTimeScaleStep( timeInSeconds ) {
+	if(	!_timeScalePlayOn ) {
+		stopTimeScale();
+		return;
+	}
+	let hours=null;
+	let seconds=null;
+	try { 
+		hours = parseFloat( _timeScalePlayHours.value );
+		seconds = parseFloat( _timeScalePlaySeconds.value );
+	} catch(e) { stopTimeScale(); return; }
+
+	let nextTimeInSeconds = timeInSeconds + hours*60*60;
+	if( nextTimeInSeconds > _data.finMaxInSeconds ) {
+		nextTimeInSeconds = _data.finMaxInSeconds;
+	}
+	_timeScaleRange.value = secondsIntoTimeScaleValue(nextTimeInSeconds)
+	onTimeScaleChange(null, nextTimeInSeconds);
+	if( nextTimeInSeconds < _data.finMaxInSeconds ) {
+		setTimeout( function() { playTimeScaleStep(nextTimeInSeconds) }, 1000*seconds );
+	} else {
+		stopTimeScale();
+	}
+}
+
 function timeScaleProgress( timeInSeconds ) {
-	console.log(_data);
+	//console.log(_data);
 	for( let i = 0 ; i < _data.activities.length ; i++ ) {
 		let o = _data.activities[i];
 

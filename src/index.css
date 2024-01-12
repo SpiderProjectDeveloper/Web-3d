@@ -216,4 +216,30 @@ button.cancel:hover { background: var(--cancel-color); color: white; }
     font-size:80%; color:#2f2f2f; 
 }
 
+#bimTimeScalePlayHours { display: inline-block; margin:0px 0px 2px 4px; padding:0px 2px 0px 2px; width:50px; font-size:12px; }
+#bimTimeScalePlaySeconds { display: inline-block; width:40px; padding:2px; font-size:12px; }
 
+#bimTimeScalePlayHoursLabel { display: inline-block; padding:2px; font-size:12px; font-weight:normal; }
+#bimTimeScalePlaySecondsLabel { display: inline-block; padding:2px; font-size:12px; font-weight:normal; }
+
+#bimTimeScalePlay {
+	cursor: pointer;
+}
+
+@keyframes play {
+	from { background-color: #ffbbbb; }
+	50% { background-color: #ff4444; }
+	to { background-color: #ffbbbb; }
+}
+
+#bimTimeScalePause {
+	cursor: pointer; background-color: #ff7777; animation: play 2s infinite
+}
+
+#bimTimeScalePlaySpeed {
+	display: inline-block; width:58px; padding:2px; font-size:12px; font-weight:normal;
+}
+
+#bimTimeScalePlaySpeedLabel {
+	width:40px; padding:4px; font-size:12px; font-weight:normal;
+}

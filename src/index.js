@@ -137,6 +137,10 @@ function initControls() {
 	div.innerHTML = _texts[_globals.lang].multipleChoice;
 	div = document.getElementById("bimHideByPickReset")
 	div.innerHTML = _texts[_globals.lang].reset;
+	div = document.getElementById("bimTimeScalePlayHoursLabel")
+	div.innerHTML = _texts[_globals.lang].playHours;
+	div = document.getElementById("bimTimeScalePlaySecondsLabel")
+	div.innerHTML = _texts[_globals.lang].playSeconds;
 }
 
 function onWindowContextMenu(e) { 
